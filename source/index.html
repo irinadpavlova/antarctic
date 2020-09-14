@@ -4,10 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat.woff2" as="font" crossorigin="anonymous">
+  <title>Круизы в Антарктику</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "pp/img/mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "pp/img/tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1024px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "pp/img/desktop.png" );
+        }
+      }
+
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link rel="stylesheet" href="pp/pp-style.css">
+    <script src="pp/pp-script.js"></script>
+    <!-- // Pixel Glass -->
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__nav-main main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Переключить меню</span></button>
+        <a class="main-nav__logo">
+          <svg width="70" height="38" aria-label="Логотип туристической компании «Круизы в Антарктику»">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <ul class="main-nav__main-list">
+          <li class="main-nav__item">
+            <a href="#">Преимущества</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Направления</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Ближайшие круизы</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__banner-main main-banner">
+        <h1>Круизы в&nbsp;Антарктику</h1>
+        <p>Волшебный мир айсбергов и пингвинов</p>
+      </div>
+    </div>
+  </header>
+  <script src="js/script.js"></script>
 </body>
 </html>

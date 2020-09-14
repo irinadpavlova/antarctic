@@ -1,0 +1,15 @@
+@mixin text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #011C40;
+  text-align: left;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
