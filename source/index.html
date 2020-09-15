@@ -47,22 +47,22 @@
     <div class="container">
       <div class="page-header__nav-main main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Переключить меню</span></button>
-        <a class="main-nav__logo">
+        <a class="main-nav__logo logo">
           <svg width="70" height="38" aria-label="Логотип туристической компании «Круизы в Антарктику»">
             <use xlink:href="#logo"></use>
           </svg>
         </a>
-        <ul class="main-nav__main-list">
-          <li class="main-nav__item">
+        <ul class="main-nav__main-list nav-list">
+          <li class="nav-list__item">
             <a href="#">Преимущества</a>
           </li>
-          <li class="main-nav__item">
+          <li class="nav-list__item">
             <a href="#">Направления</a>
           </li>
-          <li class="main-nav__item">
+          <li class="nav-list__item">
             <a href="#">Ближайшие круизы</a>
           </li>
-          <li class="main-nav__item">
+          <li class="nav-list__item">
             <a href="#">Контакты</a>
           </li>
         </ul>
@@ -73,6 +73,58 @@
       </div>
     </div>
   </header>
+  <main class="page-main">
+    <section class="page-main__description description">
+      <div class="description__wrapper">
+        <h2>Путешествие на край Земли</h2>
+        <p>
+          Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.
+        </p>
+      </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)" srcset="img/description-desktop@1x.webp, img/description-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/description-tablet@1x.webp, img/description-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/description-mobile@1x.webp, img/description-mobile@2x.webp 2x">
+        <source media="(min-width: 1024px)" srcset="img/description-desktop@1x.jpg, img/description-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/description-tablet@1x.jpg, img/description-tablet@2x.jpg 2x">
+        <img class="main-item__city" src="img/description-mobile@1x.jpg" srcset="img/description-mobile@2x.jpg 2x" width="290" height="186" alt="Три пингвина идут навстречу">
+      </picture>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="container page-footer__container">
+      <a class="page-footer__logo logo">
+        <svg width="70" height="38" aria-label="Логотип туристической компании «Круизы в Антарктику»">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </a>
+      <ul class="page-footer__nav nav-list">
+        <li class="nav-list__item">
+          <a href="#">Преимущества</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#">Направления</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#">Ближайшие круизы</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="page-footer__social-list social">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 </html>
