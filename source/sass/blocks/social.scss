@@ -2,15 +2,14 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  width: 117px;
-  // width: 9.92%;
+  width: 10.43%;
   padding-top: 9px;
   padding-bottom: 9px;
   margin-left: auto;
 }
 
 .social__item {
-  margin-right: 23px;
+  margin-right: 24.79%;
   padding-bottom: 4px;
 
   &:nth-of-type(3n) {
@@ -64,9 +63,26 @@
   background-image: url("../img/instagram.svg");
 }
 
+@media (max-width: 1345px) {
+  .social {
+    width: 13%;
+  }
+}
+
+@media (max-width: 1345px) {
+  .social {
+    width: 14%;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .social {
-    width: 100px;
+    width: 13.32%;
+    padding-top: 4px;
+  }
+
+  .social__item {
+    margin-right: 22.44%;
   }
 
   .social__link {
@@ -92,6 +108,13 @@
 
 @media (max-width: $mobile-width) {
   .social {
-    margin-left: 0;
+    width: 32.29%;
+    margin-right: 67.71%;
+    margin-left: -3px;
+    padding-top: 5px;
+  }
+
+  .social__item {
+    margin-right: 22.44%;
   }
 }
