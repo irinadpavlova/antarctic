@@ -4,40 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat.woff2" as="font" crossorigin="anonymous">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию мобильный макет */
-        background-image: url( "pp/img/mobile.png" );
-      }
-      /* Планшет */
-      @media ( min-width: 768px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "pp/img/tablet.png" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1024px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "pp/img/desktop.png" );
-        }
-      }
-
-      BODY {
-        opacity: .5;
-      }
-    </style>
-    <link rel="stylesheet" href="pp/pp-style.css">
-    <script src="pp/pp-script.js"></script>
-    <!-- // Pixel Glass -->
 </head>
 <body>
   <div style="display: none">
@@ -301,7 +273,7 @@
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp 2x">
             <!-- 1х: 560px; 2x: 1120px -->
-            <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="560" height="306" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
+            <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="560" height="306" loading="lazy" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
           </picture>
         </div>
       </div>
