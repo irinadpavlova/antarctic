@@ -146,6 +146,15 @@ input[type="checkbox"]:enabled:checked + label::after {
   @include button;
   padding-top: 11px;
   padding-bottom: 11px;
+
+  &:hover,
+  &:focus {
+    color: rgba($dark-blue, 0.8%);
+  }
+
+  &:active {
+    color: rgba($dark-blue, 0.5%);
+  }
 }
 
 @media (max-width: $tablet-width) {

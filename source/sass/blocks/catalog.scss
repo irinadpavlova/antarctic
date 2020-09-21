@@ -171,11 +171,11 @@
 
   &:hover,
   &:focus {
-    opacity: 0.8;
+    color: rgba($dark-blue, 0.8%);
   }
 
   &:active {
-    opacity: 0.5;
+    color: rgba($dark-blue, 0.5%);
   }
 }
 
