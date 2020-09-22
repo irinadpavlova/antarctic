@@ -1,7 +1,8 @@
 .form {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: url("../img/bg-booking-desktop@1x.jpg") no-repeat top center;
+  background: url("../img/bg-booking-desktop@1x.jpg") no-repeat center center;
+  background-size: cover;
   background-color: $light;
   min-height: 555px;
 }
@@ -159,7 +160,8 @@ input[type="checkbox"]:enabled:checked + label::after {
 
 @media (max-width: $tablet-width) {
   .form {
-    background: url("../img/bg-booking-tablet@1x.jpg") no-repeat top center;
+    background: url("../img/bg-booking-tablet@1x.jpg") no-repeat center center;
+    background-size: cover;
     min-height: 805px;
   }
 
@@ -223,8 +225,9 @@ input[type="checkbox"]:enabled:checked + label::after {
 
 @media (max-width: $mobile-width) {
   .form {
-    background: url("../img/bg-booking-mobile@1x.jpg") no-repeat top center;
+    background: url("../img/bg-booking-mobile@1x.jpg") no-repeat center center;
     min-height: 760px;
+    background-size: cover;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
