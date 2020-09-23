@@ -29,6 +29,7 @@
 
 .nav-list li {
   margin-left: 3.19%;
+  margin-bottom: 10px;
 }
 
 @media (max-width: $tablet-width) {
@@ -52,6 +53,7 @@
 
 @media (max-width: $mobile-width) {
   .nav-list li {
+    width: 100%;
     margin-left: 0;
   }
 }

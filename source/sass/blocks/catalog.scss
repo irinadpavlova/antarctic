@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-  visibility: hidden;
+  opacity: 0;
 }
 
 .catalog__item {
@@ -49,7 +49,7 @@
     background: $dark-blue;
 
     .catalog__hover {
-      visibility: visible;
+      opacity: 1;
     }
 
     h3 {
@@ -58,13 +58,15 @@
   }
 }
 
-.catalog__item--astoria {
+.catalog__item--astoria,
+.catalog__item--elain {
   background: url("../img/astoria-desktop@1x.jpg") no-repeat center center;
   background-size: cover;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .catalog__item--astoria {
+  .catalog__item--astoria,
+  .catalog__item--elain {
     background-image: url("../img/astoria-desktop@2x.jpg");
     background-size: cover;
   }
@@ -195,7 +197,7 @@
   margin-bottom: 9px;
 }
 
-.catalog a {
+.catalog__hover a {
   @include button;
 
   &:hover,
@@ -229,6 +231,7 @@
 
 @media (max-width: $tablet-width) {
   .catalog {
+    width: 91%;
     padding-top: 90px;
     padding-bottom: 72px;
   }
@@ -248,18 +251,22 @@
 
     &:hover,
     &:focus {
+      padding-top: 30px;
+      padding-right: 35px;
       padding-bottom: 35px;
       padding-left: 35px;
     }
   }
 
-  .catalog__item--astoria {
+  .catalog__item--astoria,
+  .catalog__item--elain {
     background: url("../img/astoria-tablet@1x.jpg") no-repeat center center;
     background-size: cover;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .catalog__item--astoria {
+    .catalog__item--astoria,
+    .catalog__item--elain {
       background-image: url("../img/astoria-tablet@2x.jpg");
       background-size: cover;
     }
@@ -337,17 +344,29 @@
     }
   }
 
+  .catalog h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
   .catalog h2 {
     margin-bottom: 51px;
 
     @include title-tablet;
   }
+
+  .catalog__item--atlantis h3,
+  .catalog__item--olympia h3,
+  .catalog__item--astoria h3 {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .catalog {
+    width: 100%;
     padding-top: 57px;
-    padding-bottom: 36px;
+    padding-bottom: 35px;
   }
 
   .catalog__item {
@@ -361,6 +380,7 @@
 
     &:hover,
     &:focus {
+      padding-right: 26px;
       padding-bottom: 35px;
       padding-left: 26px;
     }
@@ -374,13 +394,15 @@
 }
 
 @media (max-width: 350px) {
-  .catalog__item--astoria {
+  .catalog__item--astoria,
+  .catalog__item--elain {
     background: url("../img/astoria-mobile@1x.jpg") no-repeat center center;
     background-size: cover;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .catalog__item--astoria {
+    .catalog__item--astoria,
+    .catalog__item--elain {
       background-image: url("../img/astoria-mobile@2x.jpg");
       background-size: cover;
     }

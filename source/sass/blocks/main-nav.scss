@@ -3,7 +3,7 @@
   justify-content: space-between;
   width: 100%;
   margin-top: 35px;
-  margin-bottom: 192px;
+  margin-bottom: 185px;
 }
 
 .main-nav__toggle {
@@ -13,7 +13,7 @@
 @media (max-width: $tablet-width) {
   .main-nav {
     margin-top: 29px;
-    margin-bottom: 213px;
+    margin-bottom: 203px;
   }
 
   .main-nav__logo svg {
@@ -28,7 +28,7 @@
     position: relative;
     justify-content: flex-start;
     margin-top: 20px;
-    margin-bottom: 127px;
+    margin-bottom: 0;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -41,6 +41,7 @@
 
   .main-nav__main-list a {
     margin-left: 0;
+    word-wrap: break-word;
   }
 
   .main-nav__logo svg {
@@ -132,23 +133,6 @@
     display: flex;
   }
 
-  // .main-nav--opened {
-  //   display: block;
-  //   position: absolute;
-  //   z-index: 2;
-  //   top: 0;
-  //   right: 0;
-  //   width: 100%;
-  //   margin-top: 0;
-  //   font-weight: 600;
-  //   font-size: 20px;
-  //   line-height: 28px;
-  //   padding-top: 20px;
-  //   min-height: 299px;
-  //   color: $dark-blue;
-  //   background-color: $light;
-  // }
-
   .main-nav--nojs,
   .main-nav--opened {
     display: block;
@@ -191,5 +175,18 @@
   .main-nav--nojs svg,
   .main-nav--opened svg {
     fill: $dark-blue;
+  }
+
+  .main-nav--opened {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .main-nav--nojs + .main-banner {
+    min-height: 315px;
   }
 }
