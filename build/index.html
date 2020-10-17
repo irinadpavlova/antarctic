@@ -59,7 +59,7 @@
           <source type="image/webp" media="(max-width: 1023px)" srcset="img/description-tablet@1x.webp, img/description-tablet@2x.webp 2x">
           <source type="image/webp" media="(min-width: 1024px)" srcset="img/description-desktop@1x.webp, img/description-desktop@2x.webp 2x">
           <!-- 1х: 560px; 2x: 1120px -->
-          <img src="img/description-desktop@1x.jpg" srcset="img/description-desktop@2x.jpg 2x" width="560" height="301" alt="Три пингвина идут навстречу">
+          <img class="description__image image image--poly" src="img/description-desktop@1x.jpg" srcset="img/description-desktop@2x.jpg 2x" width="560" height="301" alt="Три пингвина идут навстречу">
         </picture>
       </div>
     </section>
@@ -267,13 +267,13 @@
           <address>г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</address>
           <a class="contacts__phone" href="tel:88002000000">8-800-200-00-00</a>
         </div>
-        <div class="contacts__image-wrapper">
+        <div class="contacts__image-wrapper background">
           <picture>
             <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp 2x">
             <!-- 1х: 560px; 2x: 1120px -->
-            <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="560" height="306" loading="lazy" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
+            <img class="contacts__image image image--poly" src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="560" height="306" loading="lazy" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
           </picture>
         </div>
       </div>
@@ -313,6 +313,7 @@
       </ul>
     </div>
   </footer>
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

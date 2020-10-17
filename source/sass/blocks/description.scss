@@ -34,6 +34,10 @@
   object-fit: cover;
 }
 
+.image--poly {
+  font-family: "object-fit: contain";
+}
+
 @media (max-width: $tablet-width) {
   .description {
     padding-top: 90px;
